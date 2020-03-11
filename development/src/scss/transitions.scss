@@ -1,0 +1,38 @@
+.v-appear-left,
+.v-appear-right,
+.v-appear-left-delay {
+	&-leave-active {
+		position: absolute;
+	}
+
+	&-enter-active,
+	&-leave,
+	&-leave-to {
+		transition: transform 400ms ease-in, opacity 400ms ease-out 300ms;
+	}
+}
+
+.v-appear-left-delay {
+	&-enter-active,
+	&-leave,
+	&-leave-to {
+		transition: transform 400ms ease-in 200ms, opacity 400ms ease-out 500ms;
+	}
+}
+
+.v-appear-left,
+.v-appear-left-delay {
+	&-enter,
+	&-leave-to {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+}
+
+.v-appear-right {
+	&-enter,
+	&-leave-to {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+}
