@@ -12,7 +12,7 @@
     "knexdown": "knex --knexfile '../server/db/knexfile.js' migrate:rollback --all"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^3.3.2",
     "stripe": "^7.13.0",
     "vue": "^2.6.10",
